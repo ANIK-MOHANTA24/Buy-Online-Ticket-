@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="style/styles.css">
 </head>
 
-<body>
-  <header>
+<body class="max-w-6xl mx-auto font-raleway">
+  <header class="mx-4 md:mx-10">
     <!-- for navbar section -->
     <nav>
       <div class="navbar bg-base-100">
@@ -26,44 +26,96 @@
               </svg>
             </div>
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Item 1</a></li>
+              <li><a>Home</a></li>
               <li>
-                <a>Parent</a>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
+                <a>About</a>
               </li>
-              <li><a>Item 3</a></li>
+              <li><a>Description</a></li>
+              <li><a>Search</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost text-xl">daisyUI</a>
+          <a class="btn btn-ghost text-xl"><span class="text-[#1DD100]">P-</span>Ticket</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a>Item 1</a></li>
-            <li>
-              <details>
-                <summary>Parent</summary>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </details>
-            </li>
-            <li><a>Item 3</a></li>
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Description</a></li>
+            <li><a>Search</a></li>
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn">Button</a>
+          <a class="btn text-[#1DD100]">Bus <img src="images/bus-icon.png" alt=""></a>
         </div>
       </div>
     </nav>
     <!-- for banner section -->
-    <section>
-
-    </section>
+    <div class="rounded-3xl hero sm:min-h-full md:min-h-screen lg:min-h-screen"
+      style="background-image: url(./images/banner.png);">
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-3xl md:text-5xl lg:text-5xl font-extrabold">End-to-End Travel with</h1>
+          <h1 class="mb-5 text-3xl md:text-5xl lg:text-5xl font-extrabold [#1DD100] ">P Paribahan</h1>
+          <p class="mb-5 font-inter">P-Transport is modern and comfortable own transport system. We have domestic
+            drivers, besides we also give passenger security</p>
+          <button class="btn btn-primary bg-[#1DD100] border-0 font-bold text-xl">Get Started</button>
+        </div>
+      </div>
+    </div>
   </header>
+  <main>
+    <!-- best offer section -->
+    <section class="my-20 mx-4 md:mx-10 text-center">
+      <h1 class="font-extrabold text-4xl mx-auto mb-7 text-[#030712]">Best offers for you</h1>
+      <div class="flex flex-col md:flex-col lg:flex-row justify-between gap-5 mx-auto">
+        <!-- 15% OFF -->
+        <div class=" text-primary-content flex text-center mx-auto">
+          <div class="rounded-r-[25px] rounded-l-[15px] bg-[#FFBF0F] sm:p-2 md:p-5 ">
+            <div class="sm:w-40 md:w-60 lg:w-60 font-inter py-auto">
+              <h2 class="font-black text-3xl text-[#030712]">15% OFF</h2>
+              <p class="font-semibold text-xl text-[#030712CC]">on your next purchase</p>
+              <p class="font-medium text-xs text-[#030712B3]">use by January 2024</p>
+            </div>
+          </div>
+          <!-- for dashed -->
+          <div class="border-dashed border-2 border-r-[#1DD100] mt-5 mb-5">
+          </div>
+          <div class="rounded-l-[25px] rounded-r-[15px] bg-[#FFBF0F] py-5 sm:w-26 md:w-40 lg:w-40">
+            <h2 class="font-bold sm:text-xl text-4xl text-[#030712]">NEW 15</h2>
+            <p class="font-semibold text-xl text-[#030712B3]">coupon code </p>
+            <!-- <div class="sm:w-26 md:36 rounded-l-3xl">
+            </div> -->
+          </div>
+        </div>
+        <!--20% couple  -->
+        <div class=" text-primary-content flex text-center mx-auto">
+          <div class="rounded-r-[25px] rounded-l-[15px] bg-[#F78C9C] sm:p-2 md:p-5 ">
+            <div class="sm:w-40 md:w-60 lg:w-60 font-inter py-auto">
+              <h2 class="font-black text-3xl text-[#030712]">20% OFF</h2>
+              <p class="font-semibold text-xl text-[#030712CC]">on your next purchase</p>
+              <p class="font-medium text-xs text-[#030712B3]">use by January 2024</p>
+            </div>
+          </div>
+          <!-- for dashed -->
+          <div class="border-dashed border-2 border-r-[#1DD100] mt-5 mb-5">
+          </div>
+          <div class="rounded-l-[25px] rounded-r-[15px] bg-[#F78C9C] py-5 sm:w-26 md:w-40 lg:w-40 ">
+            <h2 class="font-bold sm:text-xl text-4xl text-[#030712]">couple 20</h2>
+            <p class="font-semibold text-xl text-[#030712B3]">coupon code </p>
+            <!-- <div class="sm:w-26 md:36 rounded-l-3xl">
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg border-[#1DD100] text-[#1DD100] mt-8">See all
+        offers</button>
+    </section>
+
+  </main>
+  <footer>
+
+  </footer>
 
   <script src="scripts/utilities.js"></script>
   <script src="scripts/e-ticket.js"></script>
