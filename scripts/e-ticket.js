@@ -1,1 +1,4 @@
-console.log('lets start');
+function handelSelect() {
+  console.log('Select korci');
+  // document.getElementById();
+}
