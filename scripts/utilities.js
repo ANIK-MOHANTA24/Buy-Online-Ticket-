@@ -1,7 +1,6 @@
 // console.log('update code');
 
-//for count seat
-// function handleButton(elementId) {
-//   const evtentIdBtn = document.getElementById(elementId);
-//   const enentId = evtentIdBtn.innerText();
-// }
+//for innerText seat
+function setInnerText(id, value) {
+  document.getElementById(id).innerText = value;
+}
