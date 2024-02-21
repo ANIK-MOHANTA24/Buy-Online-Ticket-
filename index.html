@@ -271,26 +271,27 @@
 
           <!-- Economy set price -->
 
-          <div id="selected_position" class="flex justify-between items-center text-center">
-            <span>C2</span><span>Economy</span><span>price</span>
+          <div id="selected_position" class="flex flex-col items-center text-center">
+            <!-- <span>C2</span><span>Economy</span><span>price</span> -->
           </div>
           <hr class="border-dashed border-[#1DD100]">
 
           <!-- total price -->
           <div class="flex justify-between">
             <p>Total Price</p>
-            <p>BDT <span id="total_price">0</span></p>
+            <p>BDT <span id="total_price" class="font-semibold">0</span></p>
           </div>
 
           <!-- coupon Apply btn -->
-          <div class="flex justify-between"><input class="text-center" type="text" placeholder="have a coupon">
-            <button class="btn bg-[#1DD100]">Apply</button>
+          <div id="hide-class" class="flex justify-between"><input class="text-center" type="text"
+              placeholder="have a coupon">
+            <button id="disabledId" class="btn bg-[#1DD100]" disabled>Apply</button>
           </div>
 
           <!-- Grand total BDT -->
           <div class="flex flex-row justify-between">
             <p>Grand Total</p>
-            <p>BDT <span id="grand-total">0</span></p>
+            <p>BDT <span id="grand_total_price" class="font-semibold">0</span></p>
           </div>
 
           <!-- input field -->

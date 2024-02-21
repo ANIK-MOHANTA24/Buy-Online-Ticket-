@@ -7,12 +7,13 @@
 .font-inter {
   font-family: 'Inter', sans-serif;
 }
-li {
+
+/* li {
   display: flex;
   gap: 30px;
   width: auto;
   margin: auto;
   list-style: numeric;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   text-align: center;
-}
+} */

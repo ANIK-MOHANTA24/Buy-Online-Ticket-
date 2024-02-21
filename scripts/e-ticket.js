@@ -16,6 +16,7 @@ for (const btn of allSeatButton) {
 
     //**step-1: for seat count/available seat ************/
     count = count + 1;
+
     available = available - 1;
     setInnerText('seat-count', count);
     setInnerText('available-count', available);
@@ -41,16 +42,37 @@ for (const btn of allSeatButton) {
     li.appendChild(p1);
     li.appendChild(p2);
     li.appendChild(p3);
-    let selectedContainer = selectPosition.appendChild(li);
-    console.log(selectedContainer);
+
+    li.classList.add('flex');
+    li.classList.add('gap-12');
+
+    selectPosition.appendChild(li);
+    // console.log(selectPosition);
 
     //******Step-3: set total BDT Price */
-    const totalPrice = document.getElementById('total_price').innerText;
+    // const totalPrice = document.getElementById('total_price').innerText;
 
-    const convertTotalPrice = parseInt(totalPrice);
+    // const convertTotalPrice = parseInt(totalPrice);
 
-    const sum = convertTotalPrice + parseInt(seatPrice);
-    // console.log(typeof sum);
-    setInnerText('total_price', sum);
+    // const sum = convertTotalPrice + parseInt(seatPrice);
+    // // console.log(typeof sum);
+    // setInnerText('total_price', sum);
+
+    totalCost('total_price', seatPrice);
+
+    //******Step-4: set Grand total BDT Price */
+    // const grandTotalPrice =
+    //   document.getElementById('grand_total_price').innerText;
+
+    // const convertGrandTotalPrice = parseInt(grandTotalPrice);
+
+    // const grandSum = convertGrandTotalPrice + parseInt(seatPrice);
+    // // console.log(typeof grandSum);
+    // setInnerText('grand_total_price', grandSum);
+
+    totalCost('grand_total_price', seatPrice);
+
+    //***step-5: couppon button disable*****/
+    showElementById('disabledId');
   });
 }
