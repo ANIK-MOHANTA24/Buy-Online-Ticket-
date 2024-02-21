@@ -21,12 +21,13 @@ for (const btn of allSeatButton) {
     setInnerText('available-count', available);
 
     //**step-2: append by Seat Economy Price ************/
-    // step-1: get innerText
+    // step-1: get innerText Name & Price
     console.log(e.target.innerText);
     const seatName = e.target.innerText;
     const seatPrice =
       e.target.parentNode.parentNode.parentNode.parentNode.parentNode
         .childNodes[7].childNodes[3].childNodes[7].childNodes[3].innerText;
+    // console.log(typeof seatPrice);
     // step-2: get position & create child & set child innerText
     const selectPosition = document.getElementById('selected_position');
     const li = document.createElement('li');
@@ -42,8 +43,14 @@ for (const btn of allSeatButton) {
     li.appendChild(p3);
     let selectedContainer = selectPosition.appendChild(li);
     console.log(selectedContainer);
-    // selectPosition.appendChild(p1);
-    // selectPosition.appendChild(p2);
-    // selectPosition.appendChild(p3);
+
+    //******Step-3: set total BDT Price */
+    const totalPrice = document.getElementById('total_price').innerText;
+
+    const convertTotalPrice = parseInt(totalPrice);
+
+    const sum = convertTotalPrice + parseInt(seatPrice);
+    // console.log(typeof sum);
+    setInnerText('total_price', sum);
   });
 }
