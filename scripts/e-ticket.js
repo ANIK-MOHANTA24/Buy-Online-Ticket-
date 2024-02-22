@@ -6,6 +6,7 @@ let count = 0;
 let available = 40;
 for (const btn of allSeatButton) {
   // console.log(btn);
+
   btn.addEventListener('click', function (e) {
     // console.log(count, 'Yeaa! seat sclect korci');
 
@@ -17,7 +18,6 @@ for (const btn of allSeatButton) {
 
     available = available - 1;
     setInnerText('available-count', available);
-
     //**step-2: append by Seat Economy Price ************/
     // step-1: get innerText Name & Price
     console.log(e.target.innerText);
@@ -42,7 +42,9 @@ for (const btn of allSeatButton) {
 
     li.classList.add('flex');
     li.classList.add('gap-12');
+
     selectPosition.appendChild(li);
+
     // console.log(selectPosition);
 
     //******Step-3: set total BDT Price */
@@ -70,5 +72,19 @@ for (const btn of allSeatButton) {
     // setInnerText('grand_total_price', grandSum);
 
     totalCost('grand_total_price', seatPrice);
+
+    //
+    const elementName = document.getElementById('label-name').innerText;
+    const elementNumber = document.getElementById('label-num').innerText;
+    const elementEmail = document.getElementById('label-email').innerText;
+    if (
+      elementName === String &&
+      elementNumber === Number &&
+      elementEmail === String
+    ) {
+      // const element = document.getElementById(elementId);
+      // element.removeAttribute('disabled');
+      console.log('ami parbo');
+    }
   });
 }

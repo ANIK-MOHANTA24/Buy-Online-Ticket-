@@ -297,15 +297,15 @@
           <!-- input field -->
           <label class="form-control w-full max-w-xs">
             <div class="label">
-              <span class="label-text">Passenger Name*</span>
+              <span id="label-name" class="label-text">Passenger Name*</span>
             </div>
             <input type="text" placeholder="Inter your name" class="input input-bordered w-full max-w-xs" />
             <div class="label">
-              <span class="label-text">Phone Number*</span>
+              <span id="label-num" class="label-text">Phone Number*</span>
             </div>
             <input type="number" placeholder="Inter your phone number" class="input input-bordered w-full max-w-xs" />
             <div class="label">
-              <span class="label-text">email ID</span>
+              <span id="label-email" class="label-text">email ID</span>
             </div>
             <input type="email" placeholder="Inter your Email ID" class="input input-bordered w-full max-w-xs" />
           </label>
@@ -316,6 +316,24 @@
           </div>
         </div>
       </div>
+    </section>
+    <!-- for success buy ticket -->
+    <section class="mb-20 hidden">
+      <div class="card w-96 bg-base-100 drop-shadow-xl image-full mx-auto bg-[#ffffff]">
+
+        <div class="card-body bg-[#ffffffe5] flex justify-center items-center text-center">
+          <img class="w-10 " src="images/Group.svg" alt="">
+          <h2 class="card-title text-[#27AE60] font-extrabold flex  justify-center">SUCCESS
+          </h2>
+          <p class="text-[#1b1b1b] font-medium">Thank you for Booking Our Bus Seats.
+            We are working hard to find the best service and deals for you</p>
+          <p class="text-[#4A4A4A]">Shortly you will find a confirmation in your email.</p>
+          <div class="card-actions justify-center">
+            <button class="btn bg-[#27AE60]">Continue</button>
+          </div>
+        </div>
+      </div>
+
     </section>
   </main>
   <footer>
