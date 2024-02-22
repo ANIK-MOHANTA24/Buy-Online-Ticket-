@@ -1,7 +1,3 @@
-// function handelSelect() {
-//   console.log('Select korci');
-//   // document.getElementById();
-// }
 // *********step-1: get a array for all set btn************************
 const allSeatButton = document.getElementsByClassName('kbd-lg');
 // console.log(kbdSeatButton);
@@ -16,9 +12,11 @@ for (const btn of allSeatButton) {
 
     //**step-1: for seat count/available seat ************/
     count = count + 1;
+    if (count <= 4) {
+      setInnerText('seat-count', count);
+    }
 
     available = available - 1;
-    setInnerText('seat-count', count);
     setInnerText('available-count', available);
 
     //**step-2: append by Seat Economy Price ************/
@@ -45,7 +43,6 @@ for (const btn of allSeatButton) {
 
     li.classList.add('flex');
     li.classList.add('gap-12');
-
     selectPosition.appendChild(li);
     // console.log(selectPosition);
 
@@ -74,5 +71,8 @@ for (const btn of allSeatButton) {
 
     //***step-5: couppon button disable*****/
     showElementById('disabledId');
+
+    grandTotalPrice();
   });
+  btn.addEventListener('click', function (e) {});
 }
