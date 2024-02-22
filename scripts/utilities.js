@@ -59,27 +59,11 @@ function hideElementById(elementId) {
   const element = document.getElementById(elementId);
   const hide = element.classList.add('hidden');
 }
-// function showElementById(elementId) {
-//   const element = document.getElementById(elementId);
-//   const hide = element.classList.remove('hidden');
-// }
-//  for NEXT BTN*****************
-function showElementByIdNextBtn() {
-  // const elementName = document.getElementById('label-name');
-  // const elementNumber = document.getElementById('label-num');
-  // const elementEmail = document.getElementById('label-email');
-  // if (
-  //   elementName === String &&
-  //   elementNumber === Number &&
-  //   elementEmail === String
-  // ) {
-  //   // const element = document.getElementById(elementId);
-  //   // element.removeAttribute('disabled');
-  //   console.log('ami parbo');
-  // }
-}
-// function targetInput('elementId') {
-//   document.getElementById('elementId').value;
+
+// function nextButton() {
+//   const element = document.getElementById('success_card');
+//   element.classList.remove('hidden');
+//   // console.log(element);
 // }
 
 // https://www.jschallenger.com/games/rush/

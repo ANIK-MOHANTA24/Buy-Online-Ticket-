@@ -11,11 +11,12 @@ for (const btn of allSeatButton) {
     // console.log(count, 'Yeaa! seat sclect korci');
 
     //**step-1: for seat count/available seat ************/
-    count = count + 1;
-    if (count <= 4) {
-      setInnerText('seat-count', count);
-    }
 
+    if (count + 1 > 4) {
+      return alert('error');
+    }
+    count = count + 1;
+    document.getElementById('seat-count').innerText = count;
     available = available - 1;
     setInnerText('available-count', available);
     //**step-2: append by Seat Economy Price ************/
@@ -85,6 +86,7 @@ for (const btn of allSeatButton) {
       // const element = document.getElementById(elementId);
       // element.removeAttribute('disabled');
       console.log('ami parbo');
+      nextButton();
     }
   });
 }
