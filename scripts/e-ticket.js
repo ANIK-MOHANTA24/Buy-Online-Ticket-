@@ -6,7 +6,6 @@ let count = 0;
 let available = 40;
 for (const btn of allSeatButton) {
   // console.log(btn);
-
   btn.addEventListener('click', function (e) {
     // console.log(count, 'Yeaa! seat sclect korci');
 
@@ -57,7 +56,10 @@ for (const btn of allSeatButton) {
 
     totalCost('total_price', seatPrice);
 
-    //******Step-4: set Grand total BDT Price */
+    //***step-4: couppon button disable*****/
+    showElementById('disabledId');
+
+    //******Step-5: set Grand total BDT Price */
     // const grandTotalPrice =
     //   document.getElementById('grand_total_price').innerText;
 
@@ -68,11 +70,5 @@ for (const btn of allSeatButton) {
     // setInnerText('grand_total_price', grandSum);
 
     totalCost('grand_total_price', seatPrice);
-
-    //***step-5: couppon button disable*****/
-    showElementById('disabledId');
-
-    grandTotalPrice();
   });
-  btn.addEventListener('click', function (e) {});
 }
